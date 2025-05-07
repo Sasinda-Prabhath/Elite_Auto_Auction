@@ -1,13 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // Optional & non-standard
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // Keep as per your request, but not required normally
-  ],
+  plugins: [react(), tailwindcss()],
   build: {
-    outDir: 'dist',
-  },
+    outDir: 'dist'
+  }
 })
